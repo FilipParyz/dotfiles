@@ -1,0 +1,40 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore files created by Vim
+*.swp
+*.swo
+*.swx
+
+# Ignore files created by Visual Studio Code
+.vscode/
+.code-workspace
+
+# Ignore files created by shell
+*.log
+*.bak
+*.tmp
+*.lock
+
+# Ignore Python specific files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore backup and temp files
+*.bak
+*.old
+*.tmp
+*.temp
+
+# Ignore local configuration
+local/
+*.local
+
+# Ignore sensitive files (customize these if necessary)
+secrets.env
+.env
+
