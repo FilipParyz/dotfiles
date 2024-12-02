@@ -7,6 +7,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # Load nvim binary
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
+# Load ssh keys
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_work
+ssh-add ~/.ssh/id_personal
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
