@@ -17,7 +17,7 @@ desktop.ini
 *.bak
 *.tmp
 *.lock
-./nvim/.config/nvim/lazy-lock.json
+nvim/.config/nvim/lazy-lock.json
 
 # Ignore Python specific files
 *.pyc
