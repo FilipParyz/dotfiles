@@ -1,13 +1,17 @@
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+
 sudo apt update
 
 sudo apt upgrade
 
-sudo apt install git tmux zsh
+# Install packages
+sudo apt install git tmux zsh ripgrep xclip unzip make gcc nvim fd-find -y
 
-# Install Neovim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
+# Install NVIM
+#curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+#sudo rm -rf /opt/nvim
+#sudo tar -C /opt -xzf nvim-linux64.tar.gz
+#rm nvim-linux64.tar.gz
 
 # Install lazygit
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
