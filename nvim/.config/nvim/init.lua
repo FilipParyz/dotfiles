@@ -184,7 +184,10 @@ require('lazy').setup({
   -- Then, because we use the `config` key, the configuration only runs
   -- after the plugin has been loaded:
   --  config = function() ... end
-
+  {
+    'christoomey/vim-tmux-navigator',
+    lazy = false,
+  },
   {
     'folke/snacks.nvim',
     priority = 1000,
