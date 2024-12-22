@@ -72,4 +72,4 @@ stow zsh || echo "Failed to stow zsh"
 stow tmux || echo "Failed to stow tmux"
 stow oh-my-zsh || echo "Failed to stow oh-my-zsh"
 
-echo "All done 👍"
+echo "\nAll done 👍"
