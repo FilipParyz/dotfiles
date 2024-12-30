@@ -3,7 +3,7 @@
 set -e  # Exit immediately if a command exits with a non-zero status.
 
 echo "Adding nvim repository 📖"
-sudo add-apt-repository ppa:neovim-ppa/unstable -y &>/dev/null
+sudo add-apt-repository ppa:neovim-ppa/stable -y &>/dev/null
 if [ $? -ne 0 ]; then echo "Failed to add nvim repository" && exit 1; fi
 
 sudo apt update -y &>/dev/null
