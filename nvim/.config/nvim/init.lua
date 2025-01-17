@@ -765,7 +765,10 @@ require('lazy').setup({
         style = 'storm',
         on_colors = function(colors)
           colors.comment = '#babadd'
+          colors.fg_gutter = '#88aaaa'
+          colors.terminal_black = '#666699'
         end,
+        on_highlights = function(highlights, colors) end,
       }
     end,
   },
