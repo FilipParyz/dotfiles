@@ -752,24 +752,31 @@ require('lazy').setup({
       }
     end,
   },
-
+  -- {
+  --   'folke/tokyonight.nvim',
+  --   priority = 1000, -- Make sure to load this before all the other start plugins.
+  --   init = function()
+  --     vim.cmd.colorscheme 'tokyonight-storm'
+  --     vim.cmd.hi 'Comment gui=none'
+  --   end,
+  --   config = function()
+  --     require('tokyonight').setup {
+  --       style = 'storm',
+  --       on_colors = function(colors)
+  --         colors.comment = '#babadd'
+  --         colors.fg_gutter = '#88aaaa'
+  --         colors.terminal_black = '#666699'
+  --       end,
+  --       on_highlights = function(highlights, colors) end,
+  --     }
+  --   end,
+  -- },
   {
-    'folke/tokyonight.nvim',
-    priority = 1000, -- Make sure to load this before all the other start plugins.
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    priority = 1000,
     init = function()
-      vim.cmd.colorscheme 'tokyonight-storm'
-      vim.cmd.hi 'Comment gui=none'
-    end,
-    config = function()
-      require('tokyonight').setup {
-        style = 'storm',
-        on_colors = function(colors)
-          colors.comment = '#babadd'
-          colors.fg_gutter = '#88aaaa'
-          colors.terminal_black = '#666699'
-        end,
-        on_highlights = function(highlights, colors) end,
-      }
+      vim.cmd.colorscheme 'catppuccin'
     end,
   },
   { 'ThePrimeagen/vim-be-good' },
