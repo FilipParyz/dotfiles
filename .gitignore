@@ -40,3 +40,4 @@ local/
 secrets.env
 .env
 
+nvim/.config/nvim/typrstats
