@@ -1,0 +1,3 @@
+[submodule "tmuxifier"]
+	path = tmuxifier/.tmuxifier
+	url = https://github.com/jimeh/tmuxifier.git
