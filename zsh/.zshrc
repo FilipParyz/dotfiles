@@ -112,7 +112,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gtp="cd /mnt/d/users/SF05229.FIATAUTO/Documents/GitHub/"
 
 export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
