@@ -96,7 +96,7 @@ return {
         }
       end, { desc = '[S]earch [F]iles' })
 
-      vim.keymap.set('n', '<leader>/', builtin.current_buffer_fuzzy_find(require 'telescope.themes') { desc = '[/] Fuzzily search in current buffer' })
+      vim.keymap.set('n', '<leader>/', builtin.current_buffer_fuzzy_find, { desc = '[/] Fuzzily search in current buffer' })
 
       -- It's also possible to pass additional configuration options.
       --  See `:help telescope.builtin.live_grep()` for information about particular keys
