@@ -1,0 +1,6 @@
+customCommands:
+  - key: 'F'
+    descriptions: 'Prune removed branches'
+    command: 'git fetch --prune'
+    context: localBranches
+    stream: true
