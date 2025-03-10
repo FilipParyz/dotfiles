@@ -17,9 +17,14 @@ desktop.ini
 *.bak
 *.tmp
 *.lock
+
+# Ignore files created by modules and submodules
 nvim/.config/nvim/lazy-lock.json
 oh-my-zsh/.oh-my-zsh/cache/.zsh-update
 lazygit/.config/lazygit/state.yml
+tmux/.config/tmux/plugins/**
+tmuxifier/.tmuxifier/layouts/*.session.sh
+
 # Ignore Python specific files
 *.pyc
 *.pyo
