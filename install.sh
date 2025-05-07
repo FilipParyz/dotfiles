@@ -3,14 +3,14 @@
 set -e  # Exit immediately if a command exits with a non-zero status.
 
 echo "Installing nvim 📖"
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz 
-sudo rm -rf /opt/nvim 
-sudo tar -C /opt -xzf nvim-linux64.tar.gz 
-sudo rm nvim-linux64.tar.gz
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+sudo rm nvim-linux-x86_64.tar.gz
 if [ $? -ne 0 ]; then echo "Failed to install nvim" && exit 1; fi
 
-sudo apt update -y 
-sudo apt upgrade -y 
+sudo apt update -y
+sudo apt upgrade -y
 if [ $? -ne 0 ]; then echo "Failed to update/upgrade the system" && exit 1; fi
 
 echo "Installing packages 📦"
@@ -35,7 +35,7 @@ cd tmux-${VERSION}
 ./configure > configure.log 2>&1
 if [ $? -ne 0 ]; then
     echo "TMUX configure failed, see configure.log for details"
-    cat configure.log 
+    cat configure.log
 fi
 
 make > make.log 2>&1

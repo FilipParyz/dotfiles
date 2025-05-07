@@ -5,7 +5,7 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
 # Load nvim binary
-export PATH="/opt/nvim-linux64/bin:$PATH"
+export PATH="/opt/nvim-linux-x86_64/bin:$PATH"
 
 # Load all private ssh keys
 eval "$(ssh-agent -s)"
@@ -15,7 +15,7 @@ grep -slR "PRIVATE" ~/.ssh/ | xargs ssh-add
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="headline/headline" 
+ZSH_THEME="headline" 
 HL_CLOCK_MODE='on'
 # old themes: agnoster, jonathan
 
