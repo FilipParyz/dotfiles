@@ -20,7 +20,7 @@ desktop.ini
 
 # Ignore files created by modules and submodules
 nvim/.config/nvim/lazy-lock.json
-oh-my-zsh/.oh-my-zsh/cache/.zsh-update
+oh-my-zsh/.oh-my-zsh/cache/*
 lazygit/.config/lazygit/state.yml
 tmux/.config/tmux/plugins/tmux-cpu-mem-monitor
 tmux/.config/tmux/plugins/vim-tmux-navigator
