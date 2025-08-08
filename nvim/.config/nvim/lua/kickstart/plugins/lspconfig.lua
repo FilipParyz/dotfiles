@@ -210,9 +210,24 @@ return {
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
-        -- gopls = {},
-        pylsp = {},
-        -- rust_analyzer = {},
+        gopls = {},
+        pylsp = {
+          settings = {
+            pylsp = {
+              plugins = {
+                pycodestyle = {
+                  enabled = false,
+                  ignore = {'W391', 'E501'},
+                  maxLineLength = 100
+                },
+                flake8 = {
+                  enabled = false
+                },
+              },
+            }
+          }
+        },
+        -- -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
